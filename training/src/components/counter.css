@@ -1,0 +1,9 @@
+.counter-container #para{
+    color: rgb(117, 117, 206);
+}
+.counter-container #btn{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    color: brown;
+
+}
