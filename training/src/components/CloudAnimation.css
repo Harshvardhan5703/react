@@ -1,0 +1,74 @@
+.cloud-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Shared Cloud Styles */
+  .cloud {
+    position: absolute;
+    background: url('/cloud5.png') no-repeat center/cover;
+    width: 100vw;
+    height: 200vh;
+    opacity: 0.9;
+    animation: cloudAnimation 15s ease-in-out infinite;
+    filter: blur(1px);
+  }
+  
+  /* Individual Cloud Layers */
+  .cloud1 {
+    animation-delay: 0s;
+    scale: 2;
+  }
+  
+  .cloud2 {
+    animation-delay: 1s;
+    scale: 1.4;
+  }
+  
+  .cloud3 {
+    animation-delay: 2s;
+    scale: 1.6;
+  }
+  
+  .matchmaking-text {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 10;
+    animation: blinkText 1.5s infinite;
+  }
+  
+  /* Cloud Movement Animation */
+  @keyframes cloudAnimation {
+    0% {
+      transform: translate(-100%, -100%) scale(1.2);
+    }
+    25% {
+      transform: translate(0%, 0%) scale(1);
+    }
+    75% {
+      transform: translateY(0%, 0%) scale(1.5);
+    }
+    100% {
+      transform: translate(150%, 150%) scale(1.2);
+    }
+  }
+  
+  /* Blinking Text Animation */
+  @keyframes blinkText {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+  
