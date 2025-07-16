@@ -7,6 +7,7 @@ import Tooltip from './components/ToolTip';
 import constant from './components/constant';
 import { motion } from 'framer-motion';
 import interview from './components/interview';
+import Something from './components/something';
 const App = () => {
     const [progress, setProgress] = useState(0);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -38,6 +39,7 @@ const App = () => {
                     <CloudAnimation/>
                     <Card/>
                     <Counter/>
+                      <Something/>
                     <h1>Welcome to my React Website!</h1>
                     <motion.div
                     initial={{ opacity: 0 }}
@@ -63,10 +65,12 @@ const App = () => {
                             );
                         })}
                     </div>
+                  
                 </motion.div>
                 </div>
             )}
             <interview/>
+            
         </div>
     );
 };
