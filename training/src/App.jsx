@@ -6,6 +6,7 @@ import CloudAnimation from './components/Cloud';
 import Tooltip from './components/ToolTip';
 import constant from './components/constant';
 import { motion } from 'framer-motion';
+import interview from './components/interview';
 const App = () => {
     const [progress, setProgress] = useState(0);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -65,6 +66,7 @@ const App = () => {
                 </motion.div>
                 </div>
             )}
+            <interview/>
         </div>
     );
 };
